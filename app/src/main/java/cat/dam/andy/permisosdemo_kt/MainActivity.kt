@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             // Comprova si ja s'ha mostrat la informació de la necessitat del permís
             if (!shouldShowRequestPermissionRationale(permissionInfo.permission)) {
-                // Si ja s'ha mostrat, sol·licita el permís directament
+                // Si no cal explicació, sol·licita el permís directament
                 activityResultLauncher.launch(permissionInfo.permission)
             } else {
                 // Altrament, mostra la informació de la necessitat del permís abans de sol·licitar-lo
