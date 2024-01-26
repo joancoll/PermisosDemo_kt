@@ -26,7 +26,7 @@
     <string name="writeExternalStoragePermissionThanks">You gave access to write external storage. Thanks!</string>
     <string name="writeExternalStoragePermissionSettings">You permanently denied write external storage permission, please enable this permission in your settings to enjoy this app.</string>
     <string name="writeExternalStoragePermissionReady">External storage write permission ready</string>
-    <string name="readExternalPermissionInfo">Read External access</string>
+    <string name="readExternalStoragePermissionInfo">Read External access</string>
     <string name="readExternalStoragePermissionNeeded">We need storage read permission to show your pictures</string>
     <string name="readExternalStoragePermissionDenied">You denied read external storage permission, please enable this permission in your settings to enjoy this app.</string>
     <string name="readExternalStoragePermissionThanks">You gave access to read external storage. Thanks!</string>
