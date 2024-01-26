@@ -20,7 +20,7 @@
     <string name="cameraPermissionThanks">You gave access to camera. Thanks!</string>
     <string name="cameraPermissionSettings">You permanently denied camera permission, please enable this permission in your settings to enjoy this app.</string>
     <string name="cameraPermissionsReady">Camera permission ready</string>
-    <string name="writeExternalPermissionInfo">Write external access</string>
+    <string name="writeExternalStoragePermissionInfo">Write external access</string>
     <string name="writeExternalStoragePermissionNeeded">We need write external storage permission to save your pictures</string>
     <string name="writeExternalStoragePermissionDenied">You denied write external storage permission, please enable this permission in your settings to enjoy this app.</string>
     <string name="writeExternalStoragePermissionThanks">You gave access to write external storage. Thanks!</string>
