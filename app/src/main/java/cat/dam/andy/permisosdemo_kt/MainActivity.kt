@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         for (permissionData in permissionManager.getAllNeededPermissions()) {
             if (permissionData.permission != null && permissionData.permissionInfo != null) {
                 val button = createButton(
-                    permissionData!!,
+                    permissionData,
                     permissionData.permissionInfo!!
                 )
                 llButtonsContainer.addView(button)

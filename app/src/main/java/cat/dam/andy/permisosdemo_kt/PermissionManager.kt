@@ -41,7 +41,8 @@ class PermissionManager(private val activityContext: Context) {
                     if (permissions.containsValue(false)) {
                         // Check every permission
                         for (permissionKey in permissions.keys) {
-                            val position = permissionsRequired.indexOfFirst { it.permission == permissionKey }
+                            val position =
+                                permissionsRequired.indexOfFirst { it.permission == permissionKey }
 
                             when {
                                 permissions[permissionKey] == true -> {
@@ -51,6 +52,7 @@ class PermissionManager(private val activityContext: Context) {
                                         permissionsRequired[position].permissionGrantedMessage
                                     )
                                 }
+
                                 ActivityCompat.shouldShowRequestPermissionRationale(
                                     activityContext,
                                     permissionKey
@@ -68,6 +70,7 @@ class PermissionManager(private val activityContext: Context) {
                                         }
                                     )
                                 }
+
                                 else -> {
                                     // Permission denied permanently
                                     showAlert(
@@ -75,8 +78,13 @@ class PermissionManager(private val activityContext: Context) {
                                         permissionsRequired[position].permissionPermanentDeniedMessage,
                                         { _, _ ->
                                             // Go to app settings
-                                            val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-                                            val uri = Uri.fromParts("package", activityContext.packageName, null)
+                                            val intent =
+                                                Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                                            val uri = Uri.fromParts(
+                                                "package",
+                                                activityContext.packageName,
+                                                null
+                                            )
                                             intent.data = uri
                                             activityContext.startActivity(intent)
                                         },
