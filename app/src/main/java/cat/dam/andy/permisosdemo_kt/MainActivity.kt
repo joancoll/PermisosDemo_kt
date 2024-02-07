@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         button.text = permissionInfo
         button.setOnClickListener {
             if (!permissionManager.hasPermission(permissionData.permission!!)) {
-                permissionManager.askOnePermission(permissionData)
+                permissionManager.askForThisPermission(permissionData.permission!!)
             }
             else {
                 //Toast per indicar que ja té el permís
